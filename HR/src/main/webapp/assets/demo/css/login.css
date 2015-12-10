@@ -1,0 +1,17 @@
+/* 登录-css */
+/* 创建人-zwq */
+/* 创建日期-2015.09.07 */
+#login-conter{ width: 90%; margin: 138px auto 0; max-width: 700px;}
+
+/* tabs-css */
+/* 创建人-zwq */
+/* 创建日期-2015.09.07 */
+        .tj{ font-size:10pt;width:85px; margin: 0px 10px 10px;}
+        .top-bg{
+position:absolue;
+width:100%;
+height:100%;
+z-index:999;
+background-color:red;
+}
+#tabs-conter{ background-color:white; box-shadow:0px 0px 20px rgba(0,0,0,1.0); padding:0px 30px 10px;}

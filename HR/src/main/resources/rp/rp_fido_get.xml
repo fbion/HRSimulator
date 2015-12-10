@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+      http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+	   http://www.springframework.org/schema/tx
+	   http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	   http://www.springframework.org/schema/jee
+	   http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+	   http://www.springframework.org/schema/lang
+       http://www.springframework.org/schema/lang/spring-lang-3.1.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+       <!-- 请求地址 -->
+	<bean id="request_url"
+		class="com.idsmanager.rp.util.RequestUrl">
+		<property name="deviceUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/v1</value>
+		</property>
+		<property name="registerReqUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/u2f/RegisterRequest</value>
+		</property>
+		<property name="registerRspUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/u2f/RegisterResponse</value>
+		</property>
+		<property name="authReqUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/u2f/AuthenticateRequest</value>
+		</property>
+		<property name="authRspUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/u2f/AuthenticateResponse</value>
+		</property>
+		<property name="startTransactionUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/plus/startTransaction</value>
+		</property>
+		<property name="responseTransactionUrl">
+			<value>http://123.59.78.13:8080/FIDOServer/plus/finishTransaction</value>
+		</property>
+	</bean>
+
+</beans>

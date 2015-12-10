@@ -1,0 +1,13 @@
+.form-div{  width:80%; margin-left:auto; margin-right:auto;}/**/
+.form-div .form-label-div{ width:20%;}
+.form-div>div>label{ margin-left:0px;} 
+.form-div-left{  width:50%; float:left;}/**/
+.form-div-right{  width:50%; float:right;}/**/
+.form-label-div{  float:left; line-height:35px; width:30%; text-align:right;}/**/
+.form-label-div label{ padding-left:0px; }
+.form-input-div{   float:left; width:70%;}/**/
+.form-button-div{    width:250px; margin-left:auto; margin-right:auto;}/**/
+.tj{ width:100px; text-align:center; margin:0px 10px 10px;}
+
+.form-btn-left{ margin-left:10px;}
+.role-form-lbl{  margin-right:10px; margin-top:-2px;}
